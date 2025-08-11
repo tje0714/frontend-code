@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a 태그 이용해서 이미지 클릭하면 링크 이동하기</title>
+    <style>
+      /* 
+        style 태그는 파일이름.css 로
+        구분지어서 작성하는 것과 동일한 기능
+
+        차이점
+        html 코드 안에 스타일을 작성하는가
+
+        <link href="css/파일이름.css">
+        로 구분지어서 style 관련 언어만 따로 작성해서 불러오는가
+        */
+      a {
+        display: block;
+        /* 
+        화면에 보이는 a 태그를 한 줄 전체 차지하게 하여 줄 바꿈 효과
+        */
+      }
+    </style>
+    <link rel="stylesheet" href="css/05_하이퍼링크태그.css" />
+  </head>
+  <body>
+    <pre>
+각 이미지 로고를 클릭해서 주소로 이동할 수 있도록 설정
+a 태그 내부에 img 태그를 넣거나 글자를 작성하여
+글자나 이미지를 클릭했을 때 href 에 작성한 주소로
+이동하게 설정할 수 있다.
+    </pre>
+    <a href="https://www.naver.com/">
+      <img
+        src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png"
+        alt="네이버 로고"
+      />
+    </a>
+    <a href="https://www.google.com/"> 구글로 이동하기 </a>
+    <a href="04_이미지관련태그.html">컴퓨터 내에 존재하는 파일로 이동하기</a>
+  </body>
+</html>
